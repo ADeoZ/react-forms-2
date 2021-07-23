@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TrainRecord {
+  width: 380px;
+  margin: 50px auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TrainRecordForm {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.TrainRecordForm label {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.TrainRecordForm__date, .TrainRecordForm__dist {
+  width: 140px;
+  height: 45px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 10px 10px 0px 0px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TrainRecordForm__button {
+  width: 45px;
+  height: 45px;
+  border-radius: 5px;
+}
+
+.TrainRecord__history {
+  margin-top: 20px;
+}
+
+.TrainRecord__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.TrainRecord__table {
+  margin: 0px;
+  padding: 20px;
+  border: 2px solid rgb(0, 34, 73);
+  border-radius: 5px;
+  list-style: none;
+}
+
+.TrainRecord__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.TrainRecord__item i {
+  font-size: 18px;
+  margin-left: 5px;
+  cursor: pointer;
 }
